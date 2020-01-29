@@ -1,7 +1,7 @@
 # Algoritmos em linguagem C
 ##### São atividades e exercícios desenvolvidos durante o curso de Engenharia de Software
 
-[Básico](/Algoritmos-em-C/tree/master/Básico)
+[Básico](https://github.com/alessandrocarvalhobrazil/Algoritmos-em-C/tree/master/B%C3%A1sico)
 
 [Estrutura Condicional Simples](/Algoritmos-em-C/Condicional%20Simples)
 
