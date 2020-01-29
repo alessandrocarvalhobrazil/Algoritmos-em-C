@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+  float deposito, rendimento, juros;
+
+  printf("Digite o valor do depósito:");
+  scanf("%f", &deposito);
+  printf("\nDigite o valor do juros:");
+  scanf("%f", &juros);
+
+  rendimento=deposito*(juros/100);
+
+  printf("\nO rendimento do seu deposito é de R$ %.2f", rendimento);
+
+  return 0;
+}
