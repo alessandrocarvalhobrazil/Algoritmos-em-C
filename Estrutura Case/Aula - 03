@@ -1,0 +1,96 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+
+  float salario,ir, salariobruto, salarioliquido, valorbonus, CNHA,CNHAB,CNHB,inss,descVT,VT,VA;
+  int cargo, dia, ab,b,a,outros;
+  char nome[30];
+
+
+
+  printf("\n----------------FOLHA DE PAGAMENTO----------------");
+  printf("\n___________________________________________________");
+
+  printf("\nNome Funcionário: ");
+  scanf("%s", nome);
+  printf("\nSelecione o cargo: \n1 - Vendedor \n2 - Gerente \n3 - Auxiliar Administrativo \n3 - Instrutor \n4 - Zelador\n");
+  scanf("%d",&cargo);
+
+  switch (cargo) 
+  {
+    case 1: 
+    salario=1340;
+    printf("Informe a quantidade de CNH AB vendidas:");
+    scanf("%d", &ab);
+    printf("informe a quantidade de CNH B vendidas:");
+    scanf("%d",&b);
+    printf("Informe a qunatidade de CNH A vendidas:");
+    scanf("%d", &a);
+        
+    break;
+    case 2:
+    salario=2987;
+    break;
+    case 3:
+    salario=1450;
+    break;
+    salario=1250;
+    break;
+
+    default: printf("CARGO INVÁLIDO!");
+
+  }
+  
+
+        inss=salario*0.08;
+        VA=17.00*20;
+        CNHB=b*25.00;
+        CNHAB=ab*40.00;
+        CNHA=a*10.00;
+        valorbonus=CNHB+CNHA+CNHAB;
+        salariobruto=(VA+salario+valorbonus);
+            if (salariobruto>1900)
+              {
+                ir=(salariobruto*0.075);
+              }  
+        salarioliquido=(salariobruto-inss)-ir;
+    
+
+
+  printf("\n------------------------------1ª VIA-----------------------------------------");
+  printf("\nFuncionário: %s", nome);
+  printf("\nCARGO: %d",cargo);
+  printf("\n");
+  printf("\nREFERENCIA                 REMUNERAÇÃO                     DESCONTO");
+  printf("\n____________________________________________________________________________");
+  printf("\nSALARIO                     R$%.2F",salario);
+  printf("\nVALE ALIMENTAÇÃO            R$%.2f", VA);
+  printf("\nBONUS                       R$%.2f",valorbonus);
+  printf("\nINSS                                                       R$%.2f", inss);
+  printf("\nIR                                                         R$%.2f", ir);
+  printf("\n  ");
+  printf("\nVALOR A RECEBER                                            R$%.2f", salarioliquido);
+  printf("\n \n");
+  printf("\n____________________                                   ______/_________/_______");
+  printf("\nAssinatura                                                      Data\n");
+  printf("\n     \n      \n    \n");
+  printf("\n------------------------------2ª VIA----------------------------------------");
+  printf("\nFuncionário: %s", nome);
+  printf("\nCARGO: %d",cargo);
+  printf("\n");
+  printf("\nREFERENCIA                 REMUNERAÇÃO                       DESCONTO");
+  printf("\n____________________________________________________________________________");
+  printf("\nSALARIO                     R$%.2F",salario);
+  printf("\nVALE ALIMENTAÇÃO            R$%.2f", VA);
+  printf("\nBONUS                       R$%.2f",valorbonus);
+  printf("\nINSS                                                      R$%.2f", inss);
+  printf("\nIR                                                        R$%.2f", ir);
+  printf("\n  ");
+  printf("\nVALOR A RECEBER                                           R$%.2f", salarioliquido);
+  printf("\n \n");
+  printf("\n____________________                               ______/_________/_______");
+  printf("\nAssinatura                                                  Data ");
+
+  return 0;
+}
