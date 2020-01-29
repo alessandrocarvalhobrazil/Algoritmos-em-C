@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+  char nome[20];
+  float nota;
+
+  printf("Digite seu nome: ");
+  scanf("%s", nome);
+  printf("Informe a sua nota final: ");
+  scanf("%f", &nota);
+
+  if (nota>=7)
+  {
+    printf("Parabén!%s aprovado", nome);
+  }
+  
+  return 0;
+}
