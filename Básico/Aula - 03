@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(void) {
+
+    char nome[20]= "Ale";
+    int idade, ano;
+    float altura;
+
+  printf("Digite seu nome:\n");
+  scanf("%s",nome);
+  printf("Digite sua altura sem pontuação:\n");
+  scanf("%f",&altura);
+  printf("Digite sua idade:\n");
+  scanf("%d",&idade);
+
+  ano=2020-idade;
+  printf("Seu nome é %s", nome);
+  printf("\nSua idade é  %d", idade);
+  printf("\nSua altura é  %.2f", altura);
+  printf("\nVocê nasceu no ano de  %d", ano);
+
+
+
+
+  return 0;
+}
