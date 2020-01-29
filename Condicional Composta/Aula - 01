@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+  float nota1, nota2, nota3, media, mediafinal;
+  int bim;
+  char disciplina[30],nome[50];
+
+
+  printf(">>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<");
+  printf("\n---------------BOLETIM ALUNO------------------");
+  printf("\nNome do aluno:");
+  scanf("%s", nome);
+  printf("Disciplina:");
+  scanf("%s", disciplina);
+  printf("\n------------LANÇAMENTO DE NOTAS----------------");
+  printf("\nNota 1:");
+  scanf("%f", &nota1);
+  printf("\nNota 2:");
+  scanf("%f", &nota2);
+  printf("\nNota 3:");
+  scanf("%f", &nota3);
+  printf("\nQuantidade de provas:");
+  scanf("%d", &bim);
+
+  media=(nota1+nota2+nota3)/bim;
+
+    if (media>=7)
+    {
+      printf("\nAluno %s foi aprovado com média %.2f na disciplina de %s", nome, media, disciplina);
+    }
+    else {
+      printf("\nAluno %s foi reprovado com média %.2f na disciplina de %s", nome, media,disciplina);
+    }
+
+  
+  return 0;
+}
