@@ -3,7 +3,7 @@
 
 [Básico](/Algoritmos-em-C/tree/master/Básico)
 
-[Estrutura Condicional Simples](/Algoritmos-em-C/tree/master/Condicional%20Simples)
+[Estrutura Condicional Simples](/Algoritmos-em-C/Condicional%20Simples)
 
 [Estrutura Condicional Composto](/Algoritmos-em-C/tree/master/Condicional%20Composta)
 
