@@ -3,7 +3,7 @@
 
 int main(void) {
 
-  float salario,ir, salariobruto, salarioliquido, valorbonus, CNHA,CNHAB,CNHB,inss,descVT,VT,VA;
+  float salario,ir, salariobruto, salarioliquido, valorbonus, CNHA,CNHAB,CNHB,inss,VA;
   int cargo, dia, ab,b,a,outros;
   char nome[30];
 
