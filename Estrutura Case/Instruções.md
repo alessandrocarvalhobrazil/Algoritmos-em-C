@@ -12,3 +12,19 @@ Desenvolva um programa para calcular a folha de pagamento dos funcionários de u
 Aula 04 - Transportadora  
 Desenvolva um programa que receba o código do estado de origem da carga de um
 caminhão, o peso da carga em toneladas e o código da carga.
+
+CÓDIGO ESTADO |PERCENTUAL IMPOSTO
+:--------------:|:-----------------:
+1| 20
+2| 15
+3| 10
+4| 5
+
+CÓDIGO DA CARGA| PREÇO POR QUILO
+:--------------:|:----------------:
+10 a 20 |180
+21 a 30 |120
+31 a 40 |230
+
+Calcule e apresente: o peso da carga em quilos, o preço da carga, o valor do imposto
+e o valor total da carga (preço da carga mais imposto).[confira](https://github.com/alessandrocarvalhobrazil/Algoritmos-em-C/blob/master/Estrutura%20Case/Aula%20-%2003%20-%20Folha%20de%20Pagamento)
