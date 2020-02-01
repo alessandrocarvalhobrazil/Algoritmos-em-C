@@ -1,0 +1,125 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() 
+{
+  int carga, estado, peso;
+  float preco, imposto, total;
+
+
+    printf("__________________________________________");
+    printf("\n            TRANSPORTADORA LOG           ");
+    printf("\n------------------------------------------");
+    printf("\nDigite o estado de origem: ");
+    scanf("%d", &estado);
+    printf("\nDigite o peso da carga em toneladas: ");
+    scanf("%d", &peso);
+    printf("\nDigite o código da carga: ");
+    scanf("%d",&carga);
+
+
+
+      switch (estado)
+      {
+        case 1:
+        if (carga>=10 && carga<=20)
+            {
+            imposto = peso *1000 *180 *0.20;
+            preco = peso *1000 *180;
+            total = preco + imposto;
+            }
+        else if  (carga>=21 && carga<=30)
+            {
+              imposto = peso *1000 *120 *0.20;
+              preco = peso *1000 *120;
+              total = preco + imposto;
+            }   
+        else if (carga>=31 && carga<=40)
+            {
+              imposto = peso *1000*230*0.20;
+              preco = peso *1000 *230;
+              total = preco + imposto;
+            }  
+        else 
+            printf("\nCodigo de carga inválido\n");
+
+             printf("\nPeso em kg: %d \nPreço: %.2f\nImposto: %.2f \nTotal: %.2f)", peso*1000, preco, imposto, total);
+        break;
+
+
+        case 2: 
+        if (carga>=10 && carga<=20)
+          {
+            imposto = peso*1000 *180*1.15;
+            preco = peso * 1000*180;
+            total = preco+imposto;
+          }
+        else if (carga>=21 && carga<=30)
+          {
+            imposto = peso*1000*180*1.15;
+            preco= peso*1000*120;
+            total = preco+imposto;
+          }
+        else if (carga>=31 && carga<=40)
+          {
+            imposto=peso*1000*230*1.15;
+            preco=peso*1000*230;
+            total=preco+imposto;
+          }
+        else
+            printf("\nCódigo de carga inválido!");
+            printf("\nPeso em kg: %d \nPreço: %.2f\nImposto: %.2f \nTotal: %.2f)", peso*1000, preco, imposto, total);
+        break;
+
+        case 3:
+          if (carga>=10 && carga<=20)
+          {
+            imposto = peso*1000*180*0.10;
+            preco = peso*1000*180;
+            total=preco+imposto;
+          }
+          else if (carga>=21 && carga<=30)
+          {
+            imposto=peso*1000*120*0.10;
+            preco=peso*1000*120;
+            total=preco+imposto;
+          }
+          else if (carga>=31 && carga<=40)
+          {
+            imposto=peso*1000*230*0.10;
+            preco=peso*100*230;
+            total=preco+imposto;
+          }
+          else
+            printf("\nCódigo de carga inválido!");
+            printf("\nPeso em kg: %d \nPreço: %.2f\nImposto: %.2f \nTotal: %.2f)", peso*1000, preco, imposto, total);
+        break;
+
+        case 4:
+        if (carga>=10 && carga<=20)
+        {
+          imposto = peso*1000*180*0.05;
+          preco=peso*1000*180;
+          total=preco+imposto;
+        }
+        else if (carga>=21 && carga<=30)
+        {
+          imposto=peso*1000*120*0.05;
+          preco=peso*1000*120;
+          total=preco+imposto;
+        }
+        else if (carga>=21 && carga<=40)
+        {
+          imposto=peso*1000*230*0.05;
+          preco=peso*1000*230;
+          total=preco+imposto;
+        }
+        else
+          printf("\nCódigo de carga inválido!");
+            printf("\nPeso em kg: %d \nPreço: %.2f\nImposto: %.2f \nTotal: %.2f)", peso*1000, preco, imposto, total);
+        break;
+
+
+      }
+  return 0;
+} 
