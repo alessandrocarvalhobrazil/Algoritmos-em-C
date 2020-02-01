@@ -27,4 +27,4 @@ CÓDIGO DA CARGA| PREÇO POR QUILO
 31 a 40 |230
 
 Calcule e apresente: o peso da carga em quilos, o preço da carga, o valor do imposto
-e o valor total da carga (preço da carga mais imposto).[confira](https://github.com/alessandrocarvalhobrazil/Algoritmos-em-C/blob/master/Estrutura%20Case/Aula%20-%2003%20-%20Folha%20de%20Pagamento)
+e o valor total da carga (preço da carga mais imposto).[confira](https://github.com/alessandrocarvalhobrazil/Algoritmos-em-C/blob/master/Estrutura%20Case/Aula%20-%2004%20-%20Transportadora)
