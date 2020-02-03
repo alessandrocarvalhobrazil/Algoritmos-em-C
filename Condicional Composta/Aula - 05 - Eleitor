@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(void) {
+  char nome[30];
+  int idade;
+
+
+      printf("Digite seu nome:");
+      scanf("%s", nome);
+      printf("Digite a sua idade: ");
+      scanf("%d", &idade);
+
+      if (idade<16)
+      {
+        printf("\n Você não é eleitor!");
+      }
+       
+      else  if (idade<18 || idade>65)
+      {
+        printf("\n Você é eleitor facultativo!");
+      }
+      else
+      {
+        printf("\n Você é eleitor obrigatório!");
+      }
+      
+  return 0;
+}
