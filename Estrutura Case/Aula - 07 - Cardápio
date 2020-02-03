@@ -1,0 +1,86 @@
+#include <stdio.h>
+
+int main(void) 
+{ 
+  int op;
+  float valor1, valor2, valor3,valor4, total;
+  char nome[30];
+
+  printf("----------PEDIDOS----------------");
+  printf("\nComo gostaria de ser chamado: ");
+  scanf("%s", nome);
+  printf("\nPRATOS DE ENTRADA\n\n1 -Salada Caesar \n2 - Mix de folhas com creme de erva doce \n3 - Mix de folhas com manga e gorgonzola");
+  printf("\n%s, selecione o prato de entrada: ",nome);
+  scanf("%d", &op);
+
+            switch (op)
+            {
+              case 1: 
+              valor1 = 12.45;
+              break;
+              case 2:
+              valor1 = 17.50;
+              break;
+              case 3:
+              valor1 = 23.00;
+              default:printf("\nPrato inválido!");
+            }
+  printf("\nPRATOS PRINCIPAIS\n \n1 - Risoto siciliano \n2 - Eisbein Kartofel \n3 - Fetuchinni");
+  printf("\n%s, selecione o prato principal: ", nome);
+  scanf("%d", &op);
+
+              switch (op)
+              {
+                case 1:
+                valor2=65;
+                break;
+                case 2:
+                valor2=45;
+                break;
+                case 3:
+                valor2= 59.90;
+                break;
+                default:printf("\nPrato inválido!");
+              }
+   printf("\nBEBIDAS\n \n1 - Refrigerante \n2 - Taça de Vinho Tinto \n3 - Suco Natural");
+   printf("\n%s, selecione a bebida desejada: ", nome);
+   scanf("%d", &op);
+              switch (op)
+              {
+                case 1:
+                valor3=5;
+                break;
+                case 2:
+                valor3=9;
+                break;
+                case 3:
+                valor3= 7;
+                break;
+                default:printf("\nBebida inválido!");
+              }
+  printf("\nSOBREMESAS\n \n1 - Brownie \n2 - Torta Alemã \n3 - Cremes papaya e cassis");
+   printf("\n%s, selecione a sobremesa desejada: ", nome);
+   scanf("%d", &op);
+
+                switch (op)
+              {
+                case 1:
+                valor4=7;
+                break;
+                case 2:
+                valor4=10;
+                break;
+                case 3:
+                valor4= 12.90;
+                break;
+                default:printf("\nSobremesa inválido!");
+              }
+
+              total=valor1+valor2+valor3+valor4;
+
+   printf("\n============================================================================");
+   printf("\n          PEDIDO FINALIZADO\n");
+   printf("\n seu pedido deu o total de R$%.2f", total);           
+
+  return 0;
+}
