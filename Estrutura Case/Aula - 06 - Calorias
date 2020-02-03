@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main(void) 
+{
+  int op;
+  float calprato, calbebida, total;
+
+  printf("--------------------------------------");
+  printf("\n            CARDÁPIO                ");
+  printf("\n1 - Italiano\n2 - Japonês\n3 - Salavadorenho\n");
+  printf("\nSelecione o prato desejado: ");
+  scanf("%d", &op);
+
+  total=0;
+
+  switch (op)
+  {
+    case 1:
+    calprato=750;
+    break;
+    case 2:
+    calprato=324;
+    break;
+    case 3:
+    calprato=545;
+    break;
+  }
+printf("\n1 - Cha \n2 - Suco de laranja \n3 - Refrigerante:\n");
+printf("\nInforme a bebida desejada:");
+scanf("%d", &op);
+switch (op)
+{
+case 1 : calbebida =30;
+break;
+case 2: calbebida=80;
+break;
+case 3: total =90;
+break;
+}
+total = calprato+calbebida;
+
+printf ("\nO total de calorias e : %.2f", total);
+  return 0;
+}
