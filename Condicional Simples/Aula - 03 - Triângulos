@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(void) 
+{
+  int a,b,c;
+
+  printf("Informe um valor: ");
+  scanf("%d", &a);
+  printf("\nInforme um valor: ");
+  scanf("%d", &b);
+  
+  c=7;
+
+  if (a==c && b==c)
+  {
+    printf("\nTriângulo Equilátero");
+  }
+  if (a==c && b!=c)
+  {
+    printf("\nTriângulo Isóceles");
+  }
+  if (a!=c && b!=c)
+  {
+    printf("\nTriângulo Escaleno");
+  }
+
+
+
+  return 0;
+}
