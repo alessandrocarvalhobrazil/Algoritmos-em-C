@@ -39,5 +39,5 @@ Faça um programa que informe a quantidade total de calorias a partir da escolha
 | PRATO | BEBIDA|
 :------:|:------:
 Italiano 750 cal | Chá 30 cal
-Japonês 324 | cal Suco de laranja 80 cal
-Salvadorenho 545 | cal Refrigerante 90 cal
+Japonês 324 cal| Suco de laranja 80 cal
+Salvadorenho 545 cal|Refrigerante 90 cal
