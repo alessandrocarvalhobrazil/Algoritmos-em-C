@@ -35,7 +35,8 @@ Lembrando que para sexo feminino a altura deve ser multiplicada por 62.1 e depoi
 
 Aula 06 - Calorias  
 Faça um programa que informe a quantidade total de calorias a partir da escolha do usuário que deve informar o prato típico e a bebida. A Tabela de calorias encontra-se abaixo.  
-|PRATO | BEBIDA|
+
+| PRATO | BEBIDA|
 :------:|:------:
 Italiano 750 cal | Chá 30 cal
 Japonês 324 | cal Suco de laranja 80 cal
