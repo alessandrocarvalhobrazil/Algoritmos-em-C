@@ -13,7 +13,10 @@ int main(void) {
   if (nota>=7)
   {
     printf("Parabén!%s aprovado", nome);
-  }
+  
+  else
+    printf("\n%d, você não obteve a nota mínima para aprovação!", nome);
+  }  
   
   return 0;
 }
