@@ -27,4 +27,8 @@ CÓDIGO DA CARGA| PREÇO POR QUILO
 31 a 40 |230
 
 Calcule e apresente: o peso da carga em quilos, o preço da carga, o valor do imposto
-e o valor total da carga (preço da carga mais imposto).[confira](https://github.com/alessandrocarvalhobrazil/Algoritmos-em-C/blob/master/Estrutura%20Case/Aula%20-%2004%20-%20Transportadora)
+e o valor total da carga (preço da carga mais imposto).[confira](https://github.com/alessandrocarvalhobrazil/Algoritmos-em-C/blob/master/Estrutura%20Case/Aula%20-%2004%20-%20Transportadora)  
+
+Aula 05  
+Desenvolva um programa que receba o nome + sexo + altura e calcule o peso ideal da pessoa.  
+Lembrando que para sexo feminino a altura deve ser multiplicada por 62.1 e depois subtraída por 44.7, e para o sexo masculino a altura deve ser multiplicada por 72.7 e depois subtraída por 58, dessa forma poderá chegar ao peso ideal. [Confira](https://github.com/alessandrocarvalhobrazil/Algoritmos-em-C/blob/master/Estrutura%20Case/Aula%20-%2005%20-%20Peso%20ideal)
