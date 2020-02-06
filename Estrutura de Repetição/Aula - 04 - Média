@@ -1,0 +1,46 @@
+#include <stdio.h>
+int main()
+        {
+        int idade, sexo, est_Civil, q_Casadas, q_Solteiras, q_Separadas, q_Viuvas,
+        quantidade;
+        float peso, t_Peso, m_Peso, t_Idade, m_Idade;
+        idade = 1; t_Peso = 0; t_Idade = 0; q_Casadas = 0; // inicializacao
+        q_Solteiras = 0; q_Separadas = 0; q_Viuvas = 0; quantidade = 0;
+        
+        
+        while (idade != 0)
+        {
+            printf ("\nDigite a idade: ");
+            scanf ("%d", &idade);
+            if (idade != 0)
+            {
+              quantidade++;
+              t_Idade = t_Idade + idade;
+              printf ("\nDigite o peso: ");
+              scanf ("%f", &peso);
+              t_Peso = t_Peso + peso;
+              printf ("\nDigite o sexo (1-M 2-F): ");
+              scanf ("%d", &sexo);
+              printf ("\nDigite o estado civil (1-Casadas 2-Solteiras 3-Separadas 4-Viuvas: ");
+        scanf ("%d", &est_Civil);
+        switch (est_Civil)
+              {
+                case 1 : q_Casadas++;
+                break;
+                case 2 : q_Solteiras++;
+                break;
+                case 3 : q_Separadas++;
+                break;
+                case 4 : q_Viuvas++;
+                break;
+               default : printf ("\nEstado Civil Invalido\n");
+                }
+              }
+        }
+        m_Idade = t_Idade / quantidade;
+        m_Peso = t_Peso / quantidade;
+        printf ("\nCasadas: %d \nSolteiras: %d \nSeparadas: %d \nViuvas: %d",
+        q_Casadas, q_Solteiras, q_Separadas, q_Viuvas);
+        printf ("\nMedia de Peso: %.3f \nMedia de Idade: %.1f\n", m_Peso, m_Idade);
+        return (0);
+}
