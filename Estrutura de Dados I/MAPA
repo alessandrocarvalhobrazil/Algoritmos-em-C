@@ -1,0 +1,89 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+
+
+
+
+int main(void) {
+
+  printf("Arquivo original\n");
+  
+
+
+    printf("Acadêmico: Alessandro de Carvalho");
+  printf("\nRA: 1939554-5");
+  printf("\nCurso: Engenharia de Software");
+  printf("\nDisciplina: Estrutura de Dados I");
+  printf("\nData:28/06/2020");
+  printf("\n==================================================\n");
+
+  FILE *fp = fopen("HIV.csv","r");
+  
+
+
+  if (!fp) {
+    printf("Can't open file\n");
+    return 1;
+  }
+
+  char vetor[1024];
+  int row_count = 0;
+  int field_count = 0;
+
+  printf("\nAIDS - Percentual de óbitos segundo raça/cor\n");  
+  printf("\n--------------------------------------------------");
+
+  while (fgets(vetor, 1024, fp)) {
+    field_count = 0;
+    row_count++;
+
+    if(row_count==1) {
+      continue;
+    }
+ 
+
+    char *field = strtok(vetor, ",");
+
+    while (field) {
+
+        if(field_count==0){
+        printf("\nAno:\t");
+      }
+      if (field_count==1) {
+        printf("\nPercentual por raça e cor: %%");
+      }
+       if (field_count==2) {
+        printf("Branca:\t%%");
+      }
+      if (field_count==3) {
+        printf("Amarela:\t%%");
+      }
+      if (field_count==4) {
+        printf("Ignorada:\t%%");
+      }
+      if (field_count==5) {
+        printf("Indígena:\t%%");
+      }
+      if (field_count==6) {
+        printf("Parda:\t%%");
+      }
+      if (field_count==7) {
+        printf("Preta:\t%%");
+          }
+          
+         
+      printf("%s\n", field);
+      field = strtok(NULL, ",");
+
+      field_count++;
+    }
+     printf("--------------------------------------------------");
+    
+  }
+  
+  fclose(fp);
+    
+  return 0;
+}
